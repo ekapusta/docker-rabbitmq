@@ -5,6 +5,6 @@ ADD rabbitmq_delayed_message_exchange-0.0.1-rmq3.5.x-9bf265e4.ez /usr/lib/rabbit
 RUN rabbitmq-plugins enable --offline rabbitmq_management
 RUN rabbitmq-plugins enable --offline rabbitmq_web_stomp
 RUN rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange
-RUN rabbitmq-plugins enable --offline rabbitmq_shovel
+RUN rabbitmq-plugins enable --offline rabbitmq_shovel rabbitmq_shovel_management
 
 EXPOSE 15671 15672 15674
